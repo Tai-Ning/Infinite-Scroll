@@ -1,0 +1,85 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: whitesmoke;
+    font-family: "Moul", sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, #ED303C 94%, #0000),
+        radial-gradient(farthest-side, #3B8183 94%, #0000),
+        radial-gradient(farthest-side, #FAD089 94%, #0000),
+        radial-gradient(farthest-side, #FF9C5B 94%, #0000),
+        #ED303C;
+    background-size: 105% 105%;
+    background-repeat: no-repeat;
+    animation: l5 2s infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+}
+
+@keyframes l5 {
+    0% {
+        background-position: 50% -50px, -40px 50%, 50% calc(100% + 50px), calc(100% + 50px) 50%
+    }
+
+    20%,
+    25% {
+        background-position: 50% -50px, -50px 50%, 50% calc(100% + 50px), 50% 50%
+    }
+
+    45%,
+    50% {
+        background-position: 50% -50px, -50px 50%, 50% 50%, 50% 50%
+    }
+
+    75%,
+    75% {
+        background-position: 50% -50px, 50% 50%, 50% 50%, 50% 50%
+    }
+
+    95%,
+    100% {
+        background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%
+    }
+}
+
+.image-container{
+    margin:10px 30%;
+}
+
+.image-container img{
+    width:100%;
+    margin-top: 5px;;
+}
+
+/* Media Query:Large Smartphone */
+@media screen and (max-width:600px){
+    h1{
+        font-size: 14px;
+    }
+    .image-container{
+        margin:10px
+    }
+}
