@@ -2,11 +2,14 @@
 An infinite scroll photo gallery powered by the Unsplash API.
 ## Description
 This front-end project dynamically loads and displays random images from Unsplash. When users scroll near the bottom of the page, more images are automatically fetched and displayed.
-## Built With
+## Tech Stack
 - HTML5
-- CSS3 (including responsive design)
+- CSS3 (Flexbox, Responsive Design)
 - JavaScript
 - [Unsplash API](https://unsplash.com/developers)
+
+##  Preview 
+![Quote Screenshot](InfiniteScroll.gif)
 
 ##  How to Use
 1. The page loads with 5 random images.
